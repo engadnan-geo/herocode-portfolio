@@ -1,35 +1,28 @@
-
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Header from "@/components/Heroside";
 import Link from "next/link";
 
 export default function Home() {
   return (
-   
-     <main className="flex min-h-screen items-center justify-center">
-      <div className=" bg-gray-900 p-8 rounded-md shadow-md text-white flex flex-col items- h-screen-full gap-6 ">
-      <h1 className="text-4xl font-bold text-center">
-        HeroCode Portfolio – Day 1 🚀
-      </h1>
-     <div className="flex gap-6 p-8 bg-gray-800 rounded-md mt-8">
-        <Link href="#about" className="text-blue-400 hover:underline">
-          About
-        </Link>
-        <Link href="#contact" className="text-blue-400 hover:underline">
-          Contact
-        </Link>
+    <main className="flex flex-col lg:flex-row min-h-screen w-full">
+      {/* LEFT SECTION (STAYS STILL ON SCROLL) */}
+      <div className="w-full h-[70vh] mb-5 lg:w-1/2  flex  lg:sticky lg:top-0 lg:h-screen transition-all duration-300 ease-in-out">
+      <Header/>
       </div>
+
+      {/* RIGHT SECTION (SCROLLS NORMALLY) */}
+      <div className="w-full lg:w-1/2  flex flex-col">
+        <section className="p-4 flex   ">
+         <About/>
+        </section>
+        <section className="h-screen flex items-center justify-center bg-red-300">
+          <p>Section 2</p>
+        </section>
+        <section className="h-screen flex items-center justify-center bg-red-400">
+          <p>Section 3</p>
+        </section>
       </div>
-      <div className="flex flex-col gap-8 mt-8">
-     <section id="about" className="w-full">
-        <About />
-      </section>
-       <section id="contact" className="w-full bg-gray-900 mt-8">
-        <Contact />
-      </section>
-      </div>
-      
     </main>
-   
   );
 }

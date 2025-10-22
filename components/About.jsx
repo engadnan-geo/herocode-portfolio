@@ -1,14 +1,47 @@
 const About = () => {
   return (
-    <div className="p-8 bg-white rounded-lg shadow-md max-w-3xl mx-auto my-16">
-        <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
-        <p className="text-gray-700 mb-6 leading-relaxed">
-            Hello! I'm Noor Al Musabah, a passionate web developer with a love for creating beautiful and functional websites. With a background in computer science and a keen eye for design, I strive to build user-friendly experiences that leave a lasting impression.
+    <section className="w-full  bg-gradiant-to-br from-gray-900 to-gray-500 text-white flex p-8">
+       <div className="max-w-md space-y-4">
+        <h1 className="text-4xl font-bold mb-4">About Me</h1>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          Hi, I’m a <strong>Full-Stack Developer</strong> with a background in{" "}
+          <strong>Geology</strong> — a bit of an unusual path, I know 😄.  
+          My journey into tech started when I discovered how creative and
+          logical coding could be. Once I wrote my first few lines of code,
+          I was hooked — it just made sense.
         </p>
-        <p className="text-gray-700 mb-6 leading-relaxed">
-            When I'm not coding, you can find me exploring the latest tech trends, hiking in nature, or experimenting with new recipes in the kitchen. I'm always eager to learn and grow, both personally and professionally.
+<div className="h-[1px] bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 my-4"></div>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          Since then, I’ve been focused on building clean, responsive, and
+          high-performing web apps using <strong>Next.js</strong>,
+          <strong> React</strong>, <strong>Node.js</strong>, and modern
+          databases. I also enjoy exploring <strong>IoT projects</strong>,
+          blending hardware with software to create interactive experiences.
         </p>
-        </div>
+<div className="h-[1px] bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 my-4"></div>
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          My work spans everything from small web apps to SaaS-style projects,
+          and I love turning ideas into fully functional, user-friendly products.
+          Outside of code, I’m also skilled in <strong>video editing</strong> and{" "}
+          <strong>camera operation</strong>, which helps me bring a visual
+          storytelling mindset to my development process.
+        </p>
+        <div className="h-[1px] bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 my-4"></div>
+
+
+        <p className="text-lg leading-relaxed text-gray-300">
+          When I’m not coding, you’ll usually find me at the{" "}
+          <strong>gym</strong>, <strong>reading</strong>, or{" "}
+          <strong>walking outdoors</strong> — clearing my mind and finding
+          inspiration for what to build next.
+        </p>
+      </div>
+
+
+    </section>
   );
 }
 export default About;
